@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Hobbies</title>
+        <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="left-side">
+                    <div class="nav-link-wrapper">
+                        <a href="home.html">Home</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="about.html">About</a>
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    <div class="brand">
+                        <div>RAGHNI P DALASAGERE</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hobbies-wrapper">
+                <h1>READING</h1>
+                <p>Reading has been my hobby ever since I was a kid. It began with Enid Blyton's classics, 'The Secret
+                    Seven' series,'St. Claire's' series and many more. As I grew up ,I grew out of children's literature. 
+                    Mystery, mythology and fantasy has always intrigued me, these are my favorite genres. Mystery brings an element
+                    of surprise, an excitement and increases a readers involvement in the universe which writer creates. 
+                    Mythology on the other hand has its own magical way of telling compelling stories, the gods, demigods,
+                    demons, other heavenly beings and their heroics, adventures are truly timeless.And fantasy books like the Harry Potter
+                    series have beiwtched me in its wonderful universe! I really enjoy books and reading beacause often in the end 
+                    it is these stories which we remember and cherish.
+                </p>
+                <div class="popup" onclick="bookRec()"><p>Raghni's book recomendations!(click)</p>
+                    <span class="popuptext" id="myPopup"> I really enjoy suspense-mystery novels, I recommend:
+                        1. Happy Potter series - J K Rowloing <br>
+                        2. And then there were none - Agatha Christie<br>
+                        3. Sons of Fortune - Jeffrey Archer<br>
+                        4. Swami and Friends - R K Narayan<br>
+                    </span>
+                </div>
+                <script>
+                    // When the user clicks on <div>, open the popup
+                    function bookRec() {
+                      var popup = document.getElementById("myPopup");
+                      popup.classList.toggle("show");
+                    }
+                    </script>
+                    
+                <h1>JOURNALING & WRITING</h1>
+                <p>Jim Rohn says, “If you’re serious about becoming a wealthy, powerful, sophisticated, 
+                    healthy, influential, cultured, and unique individual, keep a journal.”</p>
+                <p>I really enjoy journaling as it not only helps you record of the progress you’ve made towards
+                my goals to keep you motivated in the long slog of actually reaching them, but it also helps
+                me understand my feelings and the state of my mind at the time. Jounaling helps me to at times 
+                take a step back, evaluate things from another perspective and move forward. And ofcourse it is always great to look
+                back at wonderful memories, hilarious (and embarassing) stories and deep dive into nostalgia.</p>
+                <p>Here is a link to short story I wrote: </p>
+                <p><a href="file:///C:/Users/raghn/Desktop/PortfolioWebsite/Three_Rains.pdf" target="_blank">Three Rains</a></p>
+
+            </div>
+        </div>
+    </body>
+</html>

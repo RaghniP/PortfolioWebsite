@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Page Title</title>
+        <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="left-side">
+                    <div class="nav-link-wrapper active-nav-link" >
+                        <a href="home.html">Home</a>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <a href="about.html">About</a>
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    <div class="brand">
+                        <div>RAGHNI P DALASAGERE</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+
+                <div class="portfolio-items-wrapper">
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/edu1.jfif)"></div>
+                            
+                        <div class="image-text-wrapper">
+                            <a href="education.html">
+                                <div class="subtitle">Education and Accomplishments</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/proj11.jpg)"></div>
+                            
+                        <div class="image-text-wrapper">
+                            <a href="project.html">
+                                <div class="subtitle">Projects</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/skills1.jfif)" ></div>
+                            
+                        <div class="image-text-wrapper">
+                            <a href="skills.html">
+                                <div class="subtitle">Skills</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/hob.jfif)"></div>
+                            
+                        <div class="image-text-wrapper">
+                            <a href="hobbies.html">
+                                <div class="subtitle">Hobbies</div>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/why1.jfif)"></div>
+                            
+                        <div class="image-text-wrapper">
+                            <a href="why.html">
+                                <div class="subtitle">Why hire me?</div>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/con11.jpg)"></div>
+                            
+                        <div class="image-text-wrapper">
+                            <a href="contact.html">
+                                <div class="subtitle">Contact Details</div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+        portfolioItems.forEach(portfolioItem =>{
+            portfolioItem.addEventListener('mouseover', () => {
+                portfolioItem.childNodes[1].classList.add('img-darken');
+            })
+
+            portfolioItem.addEventListener('mouseout', () => {
+                portfolioItem.childNodes[1].classList.remove('img-darken');
+            })
+
+        })
+
+        
+    </script>
+</html>
